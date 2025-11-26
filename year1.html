@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 1 Results</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #e9f4ff; /* soft light blue */
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #2196f3, #64b5f6);
+            padding: 25px;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #2196f3;
+            transition: 0.3s;
+            border: 2px solid transparent;
+        }
+
+        nav a:hover {
+            background: #bbdefb;
+            border-color: white;
+        }
+
+        /* Dropdown menu */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            list-style: none;
+            top: 40px;
+            width: 150px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            display: block;
+            padding: 8px 10px;
+            border-radius: 5px;
+            color: #2196f3;
+        }
+
+        nav ul li ul li a:hover {
+            background: #e3f2fd;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            background: white;
+            border-collapse: collapse;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        thead {
+            background: #2196f3;
+            color: white;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            font-size: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f1f8ff;
+        }
+
+        tbody tr:hover {
+            background: #e3f2fd;
+        }
+
+        /* Back button */
+        .back-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 20px;
+            background: #2196f3;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        .back-button:hover {
+            background: #1565c0;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            background: #2196f3;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Year 1 Academic Results</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Login</a></li>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../profile.html">Profile</a></li>
+                <li>
+                    <a href="#">Academic Results</a>
+                    <ul>
+                        <li><a href="year1.html">Year 1 Results</a></li>
+                        <li><a href="year2.html">Year 2 Results</a></li>
+                        <li><a href="year3.html">Year 3 Results</a></li>
+                        <li><a href="year4.html">Year 4 Results</a></li>
+                    </ul>
+                </li>
+                <li><a href="../page1.html">About me</a></li>
+                <li><a href="../page2.html">Skills</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>78</td>
+                </tr>
+                <tr>
+                    <td>History</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>Art</td>
+                    <td>92</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="../home.html" class="back-button">Back to Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Stanley Ailenge • All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
